@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    build: ./
+    ports:
+      - "9071:9071"
+    volumes:
+      - .:/app
+      - /app/target
+    container_name: spring-boot-skeleton
+    env_file:
+      - .env
