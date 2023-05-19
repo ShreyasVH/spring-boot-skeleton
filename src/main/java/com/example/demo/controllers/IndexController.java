@@ -3,39 +3,32 @@ package com.example.demo.controllers;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
+import java.util.HashMap;
 
 @RestController
 public class IndexController
 {
     @GetMapping("/api")
-    public String get(@RequestParam(value = "input") String input)
+    public Map<String, String> get(@RequestParam(value = "input") String input)
     {
-        return "GET REQUEST with input: " + input;
+        return new HashMap<String, String>(){{put("input", input);}};
     }
 
     @PostMapping("/api")
-    public String post(@RequestBody Map<String, String> request)
+    public Map<String, Map<String, String>> post(@RequestBody Map<String, String> request)
     {
-        for(String key: request.keySet())
-        {
-            System.out.println(key + ": " + request.get(key));
-        }
-        return "POST REQUEST";
+        return new HashMap<String, Map<String, String>>(){{put("input", request);}};
     }
 
     @PutMapping("/api")
-    public String put(@RequestBody Map<String, String> request)
+    public Map<String, Map<String, String>> put(@RequestBody Map<String, String> request)
     {
-        for(String key: request.keySet())
-        {
-            System.out.println(key + ": " + request.get(key));
-        }
-        return "PUT REQUEST";
+        return new HashMap<String, Map<String, String>>(){{put("input", request);}};
     }
 
     @DeleteMapping("/api")
-    public String delete()
+    public Map<String, String> delete(@RequestParam(value = "input") String input)
     {
-        return "DELETE REQUEST";
+        return new HashMap<String, String>(){{put("input", input);}};
     }
 }
