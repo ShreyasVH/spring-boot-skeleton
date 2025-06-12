@@ -1,3 +1,5 @@
 target
 .idea
 .envrc
+compile.log
+server.log
