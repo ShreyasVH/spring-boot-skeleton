@@ -2,6 +2,7 @@ target
 .idea
 .envrc
 compile.log
-server.logparentUpdates.txt
+server.log
+parentUpdates.txt
 dependencyUpdates.txt
 pluginUpdates.txt
