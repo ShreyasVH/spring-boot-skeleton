@@ -3,3 +3,6 @@ target
 .envrc
 compile.log
 server.log
+parentUpdates.txt
+dependencyUpdates.txt
+pluginUpdates.txt
