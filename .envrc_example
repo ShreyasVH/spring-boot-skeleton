@@ -1,7 +1,7 @@
 # maven path
 export PATH=
 
-# java 17 path
+# java 26.0.1 path
 export PATH=
 
 export PORT=
