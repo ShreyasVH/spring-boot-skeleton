@@ -3,5 +3,6 @@ export PATH=
 
 # java 26.0.1 path
 export PATH=
+export JAVA_HOME=
 
 export PORT=
