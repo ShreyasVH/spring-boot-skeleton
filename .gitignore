@@ -6,3 +6,4 @@ server.log
 parentUpdates.txt
 dependencyUpdates.txt
 pluginUpdates.txt
+dep.txt
